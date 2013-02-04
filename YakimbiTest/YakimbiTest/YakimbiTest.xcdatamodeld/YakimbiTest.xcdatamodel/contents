@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FileCD" representedClassName="FileCD" syncable="YES">
+        <attribute name="created_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_shared" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="last_updated_by" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_updated_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mime_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parent_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path_by_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="share_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="share_level" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shared_by" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="shared_date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="myfiles" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MyFilesCD" syncable="YES"/>
+    </entity>
+    <entity name="MyFilesCD" representedClassName="MyFilesCD" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileCD" syncable="YES"/>
+    </entity>
+    <entity name="ServiceInfoCD" representedClassName="ServiceInfoCD" syncable="YES">
+        <attribute name="availableSpace" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="last_rev_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pendingRequests" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalSpace" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="usedSpace" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FileCD" positionX="160" positionY="192" width="128" height="345"/>
+        <element name="MyFilesCD" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="ServiceInfoCD" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>

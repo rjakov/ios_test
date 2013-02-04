@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230D23DC16BD262200C8905C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DB16BD262200C8905C /* UIKit.framework */; };
+		230D23DE16BD262200C8905C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DD16BD262200C8905C /* Foundation.framework */; };
+		230D23E016BD262200C8905C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DF16BD262200C8905C /* CoreGraphics.framework */; };
+		230D23E216BD262200C8905C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23E116BD262200C8905C /* CoreData.framework */; };
+		230D23E816BD262200C8905C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 230D23E616BD262200C8905C /* InfoPlist.strings */; };
+		230D23EA16BD262200C8905C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D23E916BD262200C8905C /* main.m */; };
+		230D23EE16BD262200C8905C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 230D23ED16BD262200C8905C /* AppDelegate.m */; };
+		230D23F116BD262200C8905C /* YakimbiTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 230D23EF16BD262200C8905C /* YakimbiTest.xcdatamodeld */; };
+		233F956E16BD886C0020ACE3 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 233F956D16BD886C0020ACE3 /* ServerApi.m */; };
+		236F8EAF16BFB3D6006B30D8 /* FileCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EAE16BFB3D6006B30D8 /* FileCD.m */; };
+		236F8EB216BFBC3C006B30D8 /* RootTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EB116BFBC3C006B30D8 /* RootTableController.m */; };
+		236F8EB916BFDE7D006B30D8 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EB816BFDE7D006B30D8 /* DetailsViewController.m */; };
+		2390C39916BEA4B1002D38C9 /* CDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39816BEA4B1002D38C9 /* CDManager.m */; };
+		2390C39C16BEBC7E002D38C9 /* ServiceInfoCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39B16BEBC7E002D38C9 /* ServiceInfoCD.m */; };
+		2390C39F16BEC411002D38C9 /* MyFilesCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39E16BEC411002D38C9 /* MyFilesCD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		230D23D716BD262200C8905C /* YakimbiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YakimbiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		230D23DB16BD262200C8905C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		230D23DD16BD262200C8905C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		230D23DF16BD262200C8905C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		230D23E116BD262200C8905C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		230D23E516BD262200C8905C /* YakimbiTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YakimbiTest-Info.plist"; sourceTree = "<group>"; };
+		230D23E716BD262200C8905C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		230D23E916BD262200C8905C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		230D23EB16BD262200C8905C /* YakimbiTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YakimbiTest-Prefix.pch"; sourceTree = "<group>"; };
+		230D23EC16BD262200C8905C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		230D23ED16BD262200C8905C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		230D23F016BD262200C8905C /* YakimbiTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YakimbiTest.xcdatamodel; sourceTree = "<group>"; };
+		233F956C16BD886C0020ACE3 /* ServerApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerApi.h; sourceTree = "<group>"; };
+		233F956D16BD886C0020ACE3 /* ServerApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerApi.m; sourceTree = "<group>"; };
+		236F8EAD16BFB3D6006B30D8 /* FileCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCD.h; sourceTree = "<group>"; };
+		236F8EAE16BFB3D6006B30D8 /* FileCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCD.m; sourceTree = "<group>"; };
+		236F8EB016BFBC3C006B30D8 /* RootTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableController.h; sourceTree = "<group>"; };
+		236F8EB116BFBC3C006B30D8 /* RootTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableController.m; sourceTree = "<group>"; };
+		236F8EB716BFDE7D006B30D8 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		236F8EB816BFDE7D006B30D8 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		2390C39716BEA4B1002D38C9 /* CDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDManager.h; sourceTree = "<group>"; };
+		2390C39816BEA4B1002D38C9 /* CDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDManager.m; sourceTree = "<group>"; };
+		2390C39A16BEBC7D002D38C9 /* ServiceInfoCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceInfoCD.h; sourceTree = "<group>"; };
+		2390C39B16BEBC7E002D38C9 /* ServiceInfoCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceInfoCD.m; sourceTree = "<group>"; };
+		2390C39D16BEC411002D38C9 /* MyFilesCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFilesCD.h; sourceTree = "<group>"; };
+		2390C39E16BEC411002D38C9 /* MyFilesCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFilesCD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230D23D416BD262200C8905C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D23DC16BD262200C8905C /* UIKit.framework in Frameworks */,
+				230D23DE16BD262200C8905C /* Foundation.framework in Frameworks */,
+				230D23E016BD262200C8905C /* CoreGraphics.framework in Frameworks */,
+				230D23E216BD262200C8905C /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230D23CC16BD262200C8905C = {
+			isa = PBXGroup;
+			children = (
+				230D23E316BD262200C8905C /* YakimbiTest */,
+				230D23DA16BD262200C8905C /* Frameworks */,
+				230D23D816BD262200C8905C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		230D23D816BD262200C8905C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				230D23D716BD262200C8905C /* YakimbiTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		230D23DA16BD262200C8905C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				230D23DB16BD262200C8905C /* UIKit.framework */,
+				230D23DD16BD262200C8905C /* Foundation.framework */,
+				230D23DF16BD262200C8905C /* CoreGraphics.framework */,
+				230D23E116BD262200C8905C /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		230D23E316BD262200C8905C /* YakimbiTest */ = {
+			isa = PBXGroup;
+			children = (
+				236F8EB716BFDE7D006B30D8 /* DetailsViewController.h */,
+				236F8EB816BFDE7D006B30D8 /* DetailsViewController.m */,
+				236F8EB016BFBC3C006B30D8 /* RootTableController.h */,
+				236F8EB116BFBC3C006B30D8 /* RootTableController.m */,
+				230D23EC16BD262200C8905C /* AppDelegate.h */,
+				230D23ED16BD262200C8905C /* AppDelegate.m */,
+				2390C39716BEA4B1002D38C9 /* CDManager.h */,
+				2390C39816BEA4B1002D38C9 /* CDManager.m */,
+				230D23EF16BD262200C8905C /* YakimbiTest.xcdatamodeld */,
+				230D23E416BD262200C8905C /* Supporting Files */,
+				233F956C16BD886C0020ACE3 /* ServerApi.h */,
+				233F956D16BD886C0020ACE3 /* ServerApi.m */,
+			);
+			path = YakimbiTest;
+			sourceTree = "<group>";
+		};
+		230D23E416BD262200C8905C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				236F8EAD16BFB3D6006B30D8 /* FileCD.h */,
+				236F8EAE16BFB3D6006B30D8 /* FileCD.m */,
+				2390C39D16BEC411002D38C9 /* MyFilesCD.h */,
+				2390C39E16BEC411002D38C9 /* MyFilesCD.m */,
+				2390C39A16BEBC7D002D38C9 /* ServiceInfoCD.h */,
+				2390C39B16BEBC7E002D38C9 /* ServiceInfoCD.m */,
+				230D23E516BD262200C8905C /* YakimbiTest-Info.plist */,
+				230D23E616BD262200C8905C /* InfoPlist.strings */,
+				230D23E916BD262200C8905C /* main.m */,
+				230D23EB16BD262200C8905C /* YakimbiTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		230D23D616BD262200C8905C /* YakimbiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230D23F416BD262200C8905C /* Build configuration list for PBXNativeTarget "YakimbiTest" */;
+			buildPhases = (
+				230D23D316BD262200C8905C /* Sources */,
+				230D23D416BD262200C8905C /* Frameworks */,
+				230D23D516BD262200C8905C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YakimbiTest;
+			productName = YakimbiTest;
+			productReference = 230D23D716BD262200C8905C /* YakimbiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230D23CE16BD262200C8905C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 230D23D116BD262200C8905C /* Build configuration list for PBXProject "YakimbiTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 230D23CC16BD262200C8905C;
+			productRefGroup = 230D23D816BD262200C8905C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				230D23D616BD262200C8905C /* YakimbiTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		230D23D516BD262200C8905C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D23E816BD262200C8905C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230D23D316BD262200C8905C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230D23EA16BD262200C8905C /* main.m in Sources */,
+				230D23EE16BD262200C8905C /* AppDelegate.m in Sources */,
+				230D23F116BD262200C8905C /* YakimbiTest.xcdatamodeld in Sources */,
+				233F956E16BD886C0020ACE3 /* ServerApi.m in Sources */,
+				2390C39916BEA4B1002D38C9 /* CDManager.m in Sources */,
+				2390C39C16BEBC7E002D38C9 /* ServiceInfoCD.m in Sources */,
+				2390C39F16BEC411002D38C9 /* MyFilesCD.m in Sources */,
+				236F8EAF16BFB3D6006B30D8 /* FileCD.m in Sources */,
+				236F8EB216BFBC3C006B30D8 /* RootTableController.m in Sources */,
+				236F8EB916BFDE7D006B30D8 /* DetailsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		230D23E616BD262200C8905C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				230D23E716BD262200C8905C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		230D23F216BD262200C8905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		230D23F316BD262200C8905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		230D23F516BD262200C8905C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YakimbiTest/YakimbiTest-Prefix.pch";
+				INFOPLIST_FILE = "YakimbiTest/YakimbiTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		230D23F616BD262200C8905C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YakimbiTest/YakimbiTest-Prefix.pch";
+				INFOPLIST_FILE = "YakimbiTest/YakimbiTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230D23D116BD262200C8905C /* Build configuration list for PBXProject "YakimbiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230D23F216BD262200C8905C /* Debug */,
+				230D23F316BD262200C8905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230D23F416BD262200C8905C /* Build configuration list for PBXNativeTarget "YakimbiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230D23F516BD262200C8905C /* Debug */,
+				230D23F616BD262200C8905C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		230D23EF16BD262200C8905C /* YakimbiTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				230D23F016BD262200C8905C /* YakimbiTest.xcdatamodel */,
+			);
+			currentVersion = 230D23F016BD262200C8905C /* YakimbiTest.xcdatamodel */;
+			path = YakimbiTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 230D23CE16BD262200C8905C /* Project object */;
+}
