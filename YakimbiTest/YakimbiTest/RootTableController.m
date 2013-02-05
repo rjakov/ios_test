@@ -11,11 +11,14 @@
 #import "MyFilesCD.h"
 #import "FileCD.h"
 #import "CDManager.h"
+#import "CustomCell.h"
+
+#define kLoadingCellTag 12310
+#define kPageLimit 20
 
 @implementation RootTableController
 
 @synthesize filesArray = _filesArray;
-
 
 
 - (void)dealloc
@@ -27,10 +30,23 @@
 
 - (void) gotDataOK:(NSDictionary*) data {
     
-    NSLog(@"gotDataOK:");    
-    self.filesArray = [[CDManager sharedInstance] requestCreating:nil andEntityName:@"FileCD"];    
+    NSLog(@"gotDataOK:");
+    _currentPage = 0;
+    _pageCount = [[[data objectForKey:@"my_files"] objectForKey:@"content"] count];    
+    NSArray* tmpArray = [[CDManager sharedInstance] requestSortingBy:@"item_id" andEntityName:@"FileCD" forLimit:kPageLimit andOffset:_currentPage*kPageLimit + 1];
+    [self.filesArray addObjectsFromArray:tmpArray];
     [self.tableView reloadData];
    
+}
+
+- (void) loadNextPage {
+    
+    NSLog(@"loadNextPage:");    
+    NSArray* tmpArray = [[CDManager sharedInstance] requestSortingBy:@"item_id" andEntityName:@"FileCD" forLimit:kPageLimit andOffset:_currentPage*kPageLimit + 1];
+    
+    [self.filesArray addObjectsFromArray:tmpArray];
+        
+    [self.tableView reloadData];
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -38,6 +54,7 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.filesArray = [NSMutableArray array];
     }
     return self;
 }
@@ -109,25 +126,72 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return [self.filesArray count];
+    if (_currentPage < _pageCount) {
+        return self.filesArray.count + 1;
+    }
+    return self.filesArray.count;
+}
+
+- (UITableViewCell*) dataCell:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"customCell";
+    
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[CustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }    
+    
+    NSString* name = [[self.filesArray objectAtIndex:indexPath.row] name];
+    NSString* status = [[self.filesArray objectAtIndex:indexPath.row] status];
+    [cell.mainTextLabel setText:name];
+    [cell.subTextLabel setText:status];
+    
+    
+    return cell;
+    
+}
+
+- (UITableViewCell*) loadingCell {
+    
+    UITableViewCell *cell = [[[UITableViewCell alloc] 
+                              initWithStyle:UITableViewCellStyleDefault
+                              reuseIdentifier:nil] autorelease];
+    
+    UIActivityIndicatorView *activityIndicator = 
+    [[UIActivityIndicatorView alloc] 
+     initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicator.center = cell.center;
+    [cell addSubview:activityIndicator];
+    [activityIndicator release];
+    
+    [activityIndicator startAnimating];
+    
+    cell.tag = kLoadingCellTag;
+    
+    return cell;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    if (indexPath.row < self.filesArray.count) {
+        
+        return [self dataCell:tableView cellForRowAtIndexPath:indexPath];        
+    }
+    else {
+        
+        return [self loadingCell];        
+    }
+        
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }    
-    
-    NSString* name = [[self.filesArray objectAtIndex:indexPath.row] name];
-    [cell.textLabel setText:name]; 
-    
-    
-    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (cell.tag == kLoadingCellTag) {
+        _currentPage++;
+        [self loadNextPage];
+    }
 }
 
 /*

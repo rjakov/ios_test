@@ -102,7 +102,7 @@ static ServerApi *sharedSampleSingletonDelegate = nil;
                           error:&error];
 
     [self processJson:json];  
-    [self.delegate gotDataOK:nil];
+    [self.delegate gotDataOK:json];
 }
 
 
@@ -113,8 +113,8 @@ static ServerApi *sharedSampleSingletonDelegate = nil;
     NSDictionary* my_files = [json objectForKey:@"my_files"];
     NSArray* my_files_content = [my_files objectForKey:@"content"];
      
-    NSLog(@"last_rev_id: %@", last_rev_id);
-    NSLog(@"my_files: %@", my_files);   
+    //NSLog(@"last_rev_id: %@", last_rev_id);
+    //NSLog(@"my_files: %@", my_files);   
     
     ServiceInfoCD* sInfo = [[[CDManager sharedInstance] requestCreating:nil andEntityName:@"ServiceInfoCD"] lastObject];
     

@@ -130,7 +130,37 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:entityPredicate];
+    [request setPredicate:predicate];    
+    NSError* error = nil;
+    NSArray *results = [[self getManagedObjectContext] executeFetchRequest:request error:&error];
+    if (error) 
+    {
+        NSLog(@"%@ - description: %@", DEFAULT_ERROR_MESSAGE, error);
+        return nil;
+    } 
+    [request release];
+    return results;
+}
+
+- (NSArray*)requestSortingBy:(NSString*)sortField andEntityName:(NSString *)entityName forLimit:(NSInteger)limit andOffset:(NSInteger)offset;   
+{
+#ifdef DEBUGX
+    NSLog(@"%s", __FUNCTION__);
+#endif
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:entityName inManagedObjectContext:[self getManagedObjectContext]];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+                                        initWithKey:sortField     
+                                        ascending:NO];
+    
+    NSArray *descriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+    
+    [request setSortDescriptors:descriptors];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:nil];
     [request setPredicate:predicate];
+    request.fetchLimit = limit;
+    request.fetchOffset = offset;
     NSError* error = nil;
     NSArray *results = [[self getManagedObjectContext] executeFetchRequest:request error:&error];
     if (error) 

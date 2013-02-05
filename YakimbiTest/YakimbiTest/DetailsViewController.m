@@ -156,37 +156,45 @@
             break;
         case 1:
         
-           propertyText = [NSString stringWithFormat:@"shared: %@", self.file.is_shared];
+            
+            propertyText = @"is shared:";
+           detailedPrpText = [NSString stringWithFormat:@"%@", self.file.is_shared];
             break;
             
         case 2:
             
-            propertyText = [NSString stringWithFormat:@"item id: %d", self.file.item_id ];
+            propertyText = @"item id:";
+            detailedPrpText = [NSString stringWithFormat:@"%d", self.file.item_id ];
             break;
             
         case 3:
             
-            propertyText = [NSString stringWithFormat:@"last updated by: %@", self.file.last_updated_by];
+            propertyText = @"last updated by:";
+            detailedPrpText = [NSString stringWithFormat:@"%@", self.file.last_updated_by];
             break;
             
         case 4:
             
-            propertyText = [NSString stringWithFormat:@"last updated date: %@", self.file.last_updated_date];
+            propertyText = @"last updated date:";
+            detailedPrpText = [NSString stringWithFormat:@"%@", self.file.last_updated_date];
             break;
             
         case 5:
             
-            propertyText = [NSString stringWithFormat:@"link: %@", self.file.link];
+            propertyText = @"link:";
+            detailedPrpText = [NSString stringWithFormat:@"%@", self.file.link];
             break;
             
         case 6:
             
-            propertyText = [NSString stringWithFormat:@"name: %@", self.file.name];
+            propertyText = @"name:";
+            detailedPrpText = [NSString stringWithFormat:@"%@", self.file.name];
             break;
             
         case 7:
             
-            propertyText = [NSString stringWithFormat:@"size: %d", self.file.size];
+            propertyText = @"size:";
+            detailedPrpText = [NSString stringWithFormat:@"size: %d", self.file.size];
             break;
             
         default:

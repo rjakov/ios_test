@@ -11,11 +11,14 @@
 
 @interface RootTableController: UITableViewController <ServerApiDelegate> {
     
-    NSArray* _filesArray;
+    NSMutableArray* _filesArray;
+    int _currentPage;
+    int _pageCount;
 }
 
-@property (nonatomic, retain) NSArray* filesArray;
+@property (nonatomic, retain) NSMutableArray* filesArray;
 
 - (void) gotDataOK:(NSDictionary*) data;
+- (void) loadNextPage;
 
 @end

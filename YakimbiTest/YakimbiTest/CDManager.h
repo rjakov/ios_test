@@ -25,5 +25,7 @@
 - (NSPersistentStoreCoordinator *) getPersistentStoreCoordinator; 
 - (NSString *) applicationDocumentsDirectory; 
 - (NSArray*)requestCreating: (NSString*)entityPredicate andEntityName:(NSString *)entityName;
+- (NSArray*)requestSortingBy:(NSString*)sortField andEntityName:(NSString *)entityName forLimit:(NSInteger)limit andOffset:(NSInteger)offset;  
+
 
 @end

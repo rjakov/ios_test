@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "YakimbiTest/RootTableController.m"
-         timestampString = "381676794.643602"
+         timestampString = "381774551.029406"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "179"
-         endingLineNumber = "179"
+         startingLineNumber = "243"
+         endingLineNumber = "243"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -57,6 +57,20 @@
          startingLineNumber = "121"
          endingLineNumber = "121"
          landmarkName = "-processJson:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "YakimbiTest/RootTableController.m"
+         timestampString = "381774551.029406"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
+         landmarkName = "-loadNextPage"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
