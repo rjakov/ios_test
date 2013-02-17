@@ -15,8 +15,7 @@
 
 -(void) dealloc {
     
-    [_file release], _file = nil;
-    [super dealloc];
+    _file = nil;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -120,7 +119,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     /*@property (nonatomic, retain) NSString * created_date;

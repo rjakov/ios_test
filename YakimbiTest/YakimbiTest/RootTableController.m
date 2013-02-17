@@ -23,8 +23,7 @@
 
 - (void)dealloc
 {
-    [_filesArray release], _filesArray = nil;
-    [super dealloc];
+    _filesArray = nil;
 }
 
 
@@ -140,7 +139,7 @@
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[CustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[CustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }    
     
     NSString* name = [[self.filesArray objectAtIndex:indexPath.row] name];
@@ -155,16 +154,15 @@
 
 - (UITableViewCell*) loadingCell {
     
-    UITableViewCell *cell = [[[UITableViewCell alloc] 
+    UITableViewCell *cell = [[UITableViewCell alloc] 
                               initWithStyle:UITableViewCellStyleDefault
-                              reuseIdentifier:nil] autorelease];
+                              reuseIdentifier:nil];
     
     UIActivityIndicatorView *activityIndicator = 
     [[UIActivityIndicatorView alloc] 
      initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.center = cell.center;
     [cell addSubview:activityIndicator];
-    [activityIndicator release];
     
     [activityIndicator startAnimating];
     
@@ -243,7 +241,6 @@
     DetailsViewController *detailsViewController = [[DetailsViewController alloc] init];
     detailsViewController.file = [self.filesArray objectAtIndex:indexPath.row];     
     [self.navigationController pushViewController:detailsViewController animated:YES];    
-    [detailsViewController release];
     
     
 }

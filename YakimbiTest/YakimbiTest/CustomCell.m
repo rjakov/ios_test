@@ -15,11 +15,6 @@
     return self;
 }
 
-- (void) dealloc {
-    
-    self.mainTextLabel = nil;
-    self.subTextLabel = nil;
-}
 
 - (void)setupBackground {
     UIImage *bg = [UIImage imageNamed:@"cell-bg.png"];

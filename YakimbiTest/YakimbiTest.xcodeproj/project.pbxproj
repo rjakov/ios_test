@@ -298,6 +298,7 @@
 		230D23F516BD262200C8905C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YakimbiTest/YakimbiTest-Prefix.pch";
 				INFOPLIST_FILE = "YakimbiTest/YakimbiTest-Info.plist";
@@ -309,6 +310,7 @@
 		230D23F616BD262200C8905C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YakimbiTest/YakimbiTest-Prefix.pch";
 				INFOPLIST_FILE = "YakimbiTest/YakimbiTest-Info.plist";

@@ -13,9 +13,9 @@
 
 @interface MyFilesCD : NSManagedObject
 
-@property (nonatomic, retain) NSString * id;
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *files;
+@property (nonatomic, strong) NSString * id;
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSSet *files;
 @end
 
 @interface MyFilesCD (CoreDataGeneratedAccessors)

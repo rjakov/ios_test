@@ -138,7 +138,6 @@
         NSLog(@"%@ - description: %@", DEFAULT_ERROR_MESSAGE, error);
         return nil;
     } 
-    [request release];
     return results;
 }
 
@@ -168,7 +167,6 @@
         NSLog(@"%@ - description: %@", DEFAULT_ERROR_MESSAGE, error);
         return nil;
     } 
-    [request release];
     return results;
 }
 

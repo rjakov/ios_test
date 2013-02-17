@@ -16,7 +16,7 @@
     int _pageCount;
 }
 
-@property (nonatomic, retain) NSMutableArray* filesArray;
+@property (nonatomic, strong) NSMutableArray* filesArray;
 
 - (void) gotDataOK:(NSDictionary*) data;
 - (void) loadNextPage;

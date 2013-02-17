@@ -13,25 +13,25 @@
 
 @interface FileCD : NSManagedObject
 
-@property (nonatomic, retain) NSString * created_date;
-@property (nonatomic, retain) NSString * is_shared;
-@property (nonatomic, retain) NSNumber * item_id;
-@property (nonatomic, retain) NSString * last_updated_by;
-@property (nonatomic, retain) NSString * last_updated_date;
-@property (nonatomic, retain) NSString * link;
-@property (nonatomic, retain) NSString * mime_type;
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSNumber * parent_id;
-@property (nonatomic, retain) NSString * path;
-@property (nonatomic, retain) NSString * path_by_id;
-@property (nonatomic, retain) NSString * share_id;
-@property (nonatomic, retain) NSString * share_level;
-@property (nonatomic, retain) NSNumber * shared_by;
-@property (nonatomic, retain) NSString * shared_date;
-@property (nonatomic, retain) NSNumber * size;
-@property (nonatomic, retain) NSString * status;
-@property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSNumber * user_id;
-@property (nonatomic, retain) MyFilesCD *myfiles;
+@property (nonatomic, strong) NSString * created_date;
+@property (nonatomic, strong) NSString * is_shared;
+@property (nonatomic, strong) NSNumber * item_id;
+@property (nonatomic, strong) NSString * last_updated_by;
+@property (nonatomic, strong) NSString * last_updated_date;
+@property (nonatomic, strong) NSString * link;
+@property (nonatomic, strong) NSString * mime_type;
+@property (nonatomic, strong) NSString * name;
+@property (nonatomic, strong) NSNumber * parent_id;
+@property (nonatomic, strong) NSString * path;
+@property (nonatomic, strong) NSString * path_by_id;
+@property (nonatomic, strong) NSString * share_id;
+@property (nonatomic, strong) NSString * share_level;
+@property (nonatomic, strong) NSNumber * shared_by;
+@property (nonatomic, strong) NSString * shared_date;
+@property (nonatomic, strong) NSNumber * size;
+@property (nonatomic, strong) NSString * status;
+@property (nonatomic, strong) NSString * type;
+@property (nonatomic, strong) NSNumber * user_id;
+@property (nonatomic, strong) MyFilesCD *myfiles;
 
 @end

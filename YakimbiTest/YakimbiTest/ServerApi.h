@@ -31,9 +31,9 @@
 @end
 
 @interface ServerApi : NSObject {
-    id <ServerApiDelegate> _delegate;
+    id <ServerApiDelegate> __unsafe_unretained _delegate;
 }
-@property (nonatomic, assign) id <ServerApiDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id <ServerApiDelegate> delegate;
 
 + (ServerApi*)sharedInstance;
 

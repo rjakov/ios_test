@@ -15,7 +15,7 @@
     int detailsRowCount;
 }
 
-@property (nonatomic, retain) FileCD* file;
+@property (nonatomic, strong) FileCD* file;
 
 
 @end

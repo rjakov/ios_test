@@ -12,11 +12,11 @@
 
 @interface ServiceInfoCD : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * availableSpace;
-@property (nonatomic, retain) NSNumber * last_rev_id;
-@property (nonatomic, retain) NSString * mode;
-@property (nonatomic, retain) NSNumber * pendingRequests;
-@property (nonatomic, retain) NSNumber * totalSpace;
-@property (nonatomic, retain) NSNumber * usedSpace;
+@property (nonatomic, strong) NSNumber * availableSpace;
+@property (nonatomic, strong) NSNumber * last_rev_id;
+@property (nonatomic, strong) NSString * mode;
+@property (nonatomic, strong) NSNumber * pendingRequests;
+@property (nonatomic, strong) NSNumber * totalSpace;
+@property (nonatomic, strong) NSNumber * usedSpace;
 
 @end
