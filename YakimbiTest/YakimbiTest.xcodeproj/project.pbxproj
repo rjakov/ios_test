@@ -20,7 +20,6 @@
 		2364402C16D16EAE00FE9CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DB16BD262200C8905C /* UIKit.framework */; };
 		2364402D16D16EAE00FE9CB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DD16BD262200C8905C /* Foundation.framework */; };
 		2364403316D16EAE00FE9CB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2364403116D16EAE00FE9CB4 /* InfoPlist.strings */; };
-		2364403616D16EAE00FE9CB4 /* TestingLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2364403516D16EAE00FE9CB4 /* TestingLogic.m */; };
 		236F8EAF16BFB3D6006B30D8 /* FileCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EAE16BFB3D6006B30D8 /* FileCD.m */; };
 		236F8EB216BFBC3C006B30D8 /* RootTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EB116BFBC3C006B30D8 /* RootTableController.m */; };
 		236F8EB916BFDE7D006B30D8 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EB816BFDE7D006B30D8 /* DetailsViewController.m */; };
@@ -32,7 +31,26 @@
 		23ED4AC616C1670B003FBB84 /* cell-bg-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 23ED4AC216C1670B003FBB84 /* cell-bg-highlighted.png */; };
 		23ED4AC716C1670B003FBB84 /* cell-bg-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23ED4AC316C1670B003FBB84 /* cell-bg-highlighted@2x.png */; };
 		23ED4ACA16C16734003FBB84 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED4AC916C16733003FBB84 /* CustomCell.m */; };
+		23FAC71A16D398420025D696 /* TestingLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FAC71616D3980D0025D696 /* TestingLogic.m */; };
+		23FAC71F16D39C100025D696 /* ServerApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 233F956D16BD886C0020ACE3 /* ServerApi.m */; };
+		23FAC72016D39DAD0025D696 /* CDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39816BEA4B1002D38C9 /* CDManager.m */; };
+		23FAC72116D39DAD0025D696 /* FileCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8EAE16BFB3D6006B30D8 /* FileCD.m */; };
+		23FAC72216D39DAD0025D696 /* MyFilesCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39E16BEC411002D38C9 /* MyFilesCD.m */; };
+		23FAC72316D39DAD0025D696 /* ServiceInfoCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39B16BEBC7E002D38C9 /* ServiceInfoCD.m */; };
+		23FAC72416D39DDF0025D696 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23E116BD262200C8905C /* CoreData.framework */; };
+		23FAC72716D3A52B0025D696 /* TestingLogicForCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */; };
+		23FAC72A16D3AE6D0025D696 /* TestServerApiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23FAC6C816D3938E0025D696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230D23CE16BD262200C8905C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230D23D616BD262200C8905C;
+			remoteInfo = YakimbiTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		230D23D716BD262200C8905C /* YakimbiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YakimbiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +71,6 @@
 		2364402A16D16EAE00FE9CB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2364403016D16EAE00FE9CB4 /* TestingLogic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestingLogic-Info.plist"; sourceTree = "<group>"; };
 		2364403216D16EAE00FE9CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2364403416D16EAE00FE9CB4 /* TestingLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestingLogic.h; sourceTree = "<group>"; };
-		2364403516D16EAE00FE9CB4 /* TestingLogic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestingLogic.m; sourceTree = "<group>"; };
 		2364403716D16EAE00FE9CB4 /* TestingLogic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestingLogic-Prefix.pch"; sourceTree = "<group>"; };
 		236F8EAD16BFB3D6006B30D8 /* FileCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCD.h; sourceTree = "<group>"; };
 		236F8EAE16BFB3D6006B30D8 /* FileCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCD.m; sourceTree = "<group>"; };
@@ -74,6 +90,12 @@
 		23ED4AC316C1670B003FBB84 /* cell-bg-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell-bg-highlighted@2x.png"; sourceTree = "<group>"; };
 		23ED4AC816C16733003FBB84 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		23ED4AC916C16733003FBB84 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		23FAC71616D3980D0025D696 /* TestingLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingLogic.m; sourceTree = "<group>"; };
+		23FAC71716D3980D0025D696 /* TestingLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingLogic.h; sourceTree = "<group>"; };
+		23FAC72516D3A52B0025D696 /* TestingLogicForCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingLogicForCD.h; sourceTree = "<group>"; };
+		23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingLogicForCD.m; sourceTree = "<group>"; };
+		23FAC72816D3AE6D0025D696 /* TestServerApiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestServerApiDelegate.h; sourceTree = "<group>"; };
+		23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestServerApiDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FAC72416D39DDF0025D696 /* CoreData.framework in Frameworks */,
 				2364402B16D16EAE00FE9CB4 /* SenTestingKit.framework in Frameworks */,
 				2364402C16D16EAE00FE9CB4 /* UIKit.framework in Frameworks */,
 				2364402D16D16EAE00FE9CB4 /* Foundation.framework in Frameworks */,
@@ -174,9 +197,13 @@
 		2364402E16D16EAE00FE9CB4 /* TestingLogic */ = {
 			isa = PBXGroup;
 			children = (
-				2364403416D16EAE00FE9CB4 /* TestingLogic.h */,
-				2364403516D16EAE00FE9CB4 /* TestingLogic.m */,
+				23FAC71616D3980D0025D696 /* TestingLogic.m */,
+				23FAC71716D3980D0025D696 /* TestingLogic.h */,
 				2364402F16D16EAE00FE9CB4 /* Supporting Files */,
+				23FAC72516D3A52B0025D696 /* TestingLogicForCD.h */,
+				23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */,
+				23FAC72816D3AE6D0025D696 /* TestServerApiDelegate.h */,
+				23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */,
 			);
 			path = TestingLogic;
 			sourceTree = "<group>";
@@ -234,6 +261,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				23FAC6C916D3938E0025D696 /* PBXTargetDependency */,
 			);
 			name = TestingLogic;
 			productName = TestingLogic;
@@ -328,11 +356,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2364403616D16EAE00FE9CB4 /* TestingLogic.m in Sources */,
+				23FAC72016D39DAD0025D696 /* CDManager.m in Sources */,
+				23FAC72116D39DAD0025D696 /* FileCD.m in Sources */,
+				23FAC72216D39DAD0025D696 /* MyFilesCD.m in Sources */,
+				23FAC72316D39DAD0025D696 /* ServiceInfoCD.m in Sources */,
+				23FAC71F16D39C100025D696 /* ServerApi.m in Sources */,
+				23FAC71A16D398420025D696 /* TestingLogic.m in Sources */,
+				23FAC72716D3A52B0025D696 /* TestingLogicForCD.m in Sources */,
+				23FAC72A16D3AE6D0025D696 /* TestServerApiDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23FAC6C916D3938E0025D696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 230D23D616BD262200C8905C /* YakimbiTest */;
+			targetProxy = 23FAC6C816D3938E0025D696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		230D23E616BD262200C8905C /* InfoPlist.strings */ = {
@@ -434,7 +477,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingLogic/TestingLogic-Prefix.pch";
 				INFOPLIST_FILE = "TestingLogic/TestingLogic-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../libs/Kiwi/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -450,7 +498,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestingLogic/TestingLogic-Prefix.pch";
 				INFOPLIST_FILE = "TestingLogic/TestingLogic-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/../libs/Kiwi/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -483,6 +536,7 @@
 				2364403A16D16EAE00FE9CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
