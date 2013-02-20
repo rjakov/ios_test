@@ -38,7 +38,7 @@
 + (ServerApi*)sharedInstance;
 
 #pragma mark
-- (void) getDataRequest;
+- (void) getDataRequest: (BOOL)isAsync;
 - (void) getDataOK: (NSData*) data;
 - (void) getDataFailed: (NSDictionary*) request;
 - (void) processJson:(NSDictionary*)json;

@@ -25,7 +25,7 @@
     _nc = [[UINavigationController alloc] initWithRootViewController:_root];
     
     [[ServerApi sharedInstance] setDelegate:_root];
-    [[ServerApi sharedInstance] getDataRequest];
+    [[ServerApi sharedInstance] getDataRequest:YES];
     [self.window addSubview:_nc.view];
 
 

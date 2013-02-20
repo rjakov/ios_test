@@ -60,14 +60,47 @@ static ServerApi *sharedSampleSingletonDelegate = nil;
 
 
 //--------------------------------------------[
-- (void) getDataRequest {
+- (void) getDataRequest: (BOOL) isAsync {
     
-    dispatch_async(mBgQueue, ^{
+    if (isAsync) {
+    
+        dispatch_async(mBgQueue, ^{
+            NSData* data = [NSData dataWithContentsOfURL:mJsonDataURL];        
+            
+            
+            if (data) {
+                
+                [self performSelectorOnMainThread:@selector(getDataOK:) 
+                                       withObject:data waitUntilDone:YES];
+            }
+            else {
+                
+                [self performSelectorOnMainThread:@selector(getDataFailed:) 
+                                       withObject:nil waitUntilDone:YES];
+            }
+        });
+    }
+    else {
+        
         NSData* data = [NSData dataWithContentsOfURL:mJsonDataURL];        
-        [self performSelectorOnMainThread:@selector(getDataOK:) 
-                               withObject:data waitUntilDone:YES];
-    });
+        
+        
+        if (data) {
+            
+            [self getDataOK:data];
+        }
+        else {
+            
+            [self getDataFailed:nil];
+        }
+    }
     
+}
+
+- (void) getDataFailed: (NSDictionary*) request {
+    
+    NSLog(@"Fail to get data");
+    [self.delegate gotDataFailed:nil];    
 }
 
 - (void) getDataOK: (NSData*) data {

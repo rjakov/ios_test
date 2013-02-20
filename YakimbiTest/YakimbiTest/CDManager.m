@@ -67,6 +67,8 @@
     }
     //self.managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"YakimbiTest" ofType:@"momd"];
+    
+    NSLog(@"path %@", path);
     NSURL *momURL = [NSURL fileURLWithPath:path];
     self.managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
     return self.managedObjectModel;
@@ -85,9 +87,11 @@
     if (self.persistentStoreCoordinator != nil) 
     {
         return self.persistentStoreCoordinator;
-    }
-	
-    NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: CDBASENAME]];
+    }	
+   
+    NSString* storeUrlStr = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: CDBASENAME];
+    NSLog(@"storeUrlStr: %@", storeUrlStr);
+    NSURL *storeUrl = [NSURL fileURLWithPath: storeUrlStr];
 	
 	NSError *error = nil;
     self.persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self getManagedObjectModel]];
@@ -117,7 +121,8 @@
 {
 #ifdef DEBUGX
     NSLog(@"%s", __FUNCTION__);
-#endif
+#endif   
+    
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 

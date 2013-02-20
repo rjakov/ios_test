@@ -38,6 +38,10 @@
    
 }
 
+- (void) gotDataFailed:(NSError*) error {
+    
+}
+
 - (void) loadNextPage {
     
     NSLog(@"loadNextPage:");    

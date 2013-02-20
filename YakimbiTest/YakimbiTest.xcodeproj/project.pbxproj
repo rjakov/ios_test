@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2302245C16D3F30F005494A4 /* YakimbiTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 230D23EF16BD262200C8905C /* YakimbiTest.xcdatamodeld */; };
 		230D23DC16BD262200C8905C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DB16BD262200C8905C /* UIKit.framework */; };
 		230D23DE16BD262200C8905C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DD16BD262200C8905C /* Foundation.framework */; };
 		230D23E016BD262200C8905C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23DF16BD262200C8905C /* CoreGraphics.framework */; };
@@ -38,7 +39,6 @@
 		23FAC72216D39DAD0025D696 /* MyFilesCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39E16BEC411002D38C9 /* MyFilesCD.m */; };
 		23FAC72316D39DAD0025D696 /* ServiceInfoCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2390C39B16BEBC7E002D38C9 /* ServiceInfoCD.m */; };
 		23FAC72416D39DDF0025D696 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230D23E116BD262200C8905C /* CoreData.framework */; };
-		23FAC72716D3A52B0025D696 /* TestingLogicForCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */; };
 		23FAC72A16D3AE6D0025D696 /* TestServerApiDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -92,8 +92,6 @@
 		23ED4AC916C16733003FBB84 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		23FAC71616D3980D0025D696 /* TestingLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingLogic.m; sourceTree = "<group>"; };
 		23FAC71716D3980D0025D696 /* TestingLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingLogic.h; sourceTree = "<group>"; };
-		23FAC72516D3A52B0025D696 /* TestingLogicForCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingLogicForCD.h; sourceTree = "<group>"; };
-		23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingLogicForCD.m; sourceTree = "<group>"; };
 		23FAC72816D3AE6D0025D696 /* TestServerApiDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestServerApiDelegate.h; sourceTree = "<group>"; };
 		23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestServerApiDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,8 +198,6 @@
 				23FAC71616D3980D0025D696 /* TestingLogic.m */,
 				23FAC71716D3980D0025D696 /* TestingLogic.h */,
 				2364402F16D16EAE00FE9CB4 /* Supporting Files */,
-				23FAC72516D3A52B0025D696 /* TestingLogicForCD.h */,
-				23FAC72616D3A52B0025D696 /* TestingLogicForCD.m */,
 				23FAC72816D3AE6D0025D696 /* TestServerApiDelegate.h */,
 				23FAC72916D3AE6D0025D696 /* TestServerApiDelegate.m */,
 			);
@@ -356,13 +352,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2302245C16D3F30F005494A4 /* YakimbiTest.xcdatamodeld in Sources */,
 				23FAC72016D39DAD0025D696 /* CDManager.m in Sources */,
 				23FAC72116D39DAD0025D696 /* FileCD.m in Sources */,
 				23FAC72216D39DAD0025D696 /* MyFilesCD.m in Sources */,
 				23FAC72316D39DAD0025D696 /* ServiceInfoCD.m in Sources */,
 				23FAC71F16D39C100025D696 /* ServerApi.m in Sources */,
 				23FAC71A16D398420025D696 /* TestingLogic.m in Sources */,
-				23FAC72716D3A52B0025D696 /* TestingLogicForCD.m in Sources */,
 				23FAC72A16D3AE6D0025D696 /* TestServerApiDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
